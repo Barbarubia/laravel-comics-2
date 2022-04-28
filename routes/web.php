@@ -36,7 +36,7 @@ Route::get('/comics/{id}', function ($id) {
     if (!$selectedComic) abort(404);
 
     return view('comic', ['comic' => $selectedComic]);
-});
+})->name('comic');
 
 Route::get('/movies', function () {
     return view('movies');

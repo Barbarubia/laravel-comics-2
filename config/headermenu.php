@@ -2,33 +2,33 @@
 
 return [
     [
-        'route' => 'characters'
+        'route' => ['characters']
     ],
     [
-        'route' => 'comics'
+        'route' => ['comics', 'comic']
     ],
     [
-        'route' => 'movies'
+        'route' => ['movies']
     ],
     [
-        'route' => 'tv'
+        'route' => ['tv']
     ],
     [
-        'route' => 'games'
+        'route' => ['games']
     ],
     [
-        'route' => 'collectibles'
+        'route' => ['collectibles']
     ],
     [
-        'route' => 'videos'
+        'route' => ['videos']
     ],
     [
-        'route' => 'fans'
+        'route' => ['fans']
     ],
     [
-        'route' => 'news'
+        'route' => ['news']
     ],
     [
-        'route' => 'shop'
+        'route' => ['shop']
     ]
 ];

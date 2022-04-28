@@ -27,8 +27,8 @@
                     @endphp
 
                     @foreach ($headermenu as $menuitem)
-                        <li class="{{ Route::currentRouteName() == $menuitem['route'] ? 'active' : '' }}">
-                            <a href="{{ route($menuitem['route']) }}">{{ $menuitem['route'] }}</a>
+                        <li class="{{ in_array(Route::currentRouteName(), $menuitem['route']) ? 'active' : '' }}">
+                            <a href="{{ route($menuitem['route'][0]) }}">{{ $menuitem['route'][0] }}</a>
                         </li>
                     @endforeach
                 </ul>
