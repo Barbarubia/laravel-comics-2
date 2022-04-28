@@ -29,6 +29,15 @@ Route::get('/comics', function () {
     return view('comics', $data);
 })->name('comics');
 
+Route::get('/comics/{id}', function ($id) {
+    $comics = collect(config('comics'));
+
+    $selectedComic = $comics->firstWhere('id', $id);
+    if (!$selectedComic) abort(404);
+
+    return view('comic', ['comic' => $selectedComic]);
+});
+
 Route::get('/movies', function () {
     return view('movies');
 })->name('movies');
