@@ -180,7 +180,7 @@
                 background-color: #00a9d9;
                 color: white;
                 text-transform: uppercase;
-                &.label-comic-book {
+                &.label-type {
                     position: absolute;
                     top: 0;
                     left: 0;
@@ -254,6 +254,54 @@
                 align-items: flex-end;
                 .adv-title {
                     color: #555555;
+                }
+            }
+        }
+    }
+}
+
+.comic-details {
+    background-color: #f6f6f6;
+    color: grey;
+    .container-narrow {
+        display: flex;
+        gap: 2rem;
+        padding: 2rem 0 5rem 0;
+        .column-left, .column-right {
+            width: 50%;
+            .row {
+                display: flex;
+                padding: 1rem 0;
+                border-bottom: 1px solid #b4b6b9;
+                h2 {
+                    font-size: 1.4rem;
+                    color: #003f70;
+                }
+                .column-left, .column-right {
+                    h3 {
+                        font-size: 1rem;
+                        color: #003f70;
+                    }
+                }
+                .column-left {
+                    width: 30%;
+                }
+                .column-right {
+                    width: 70%;
+                    .list-artists, .list-writers {
+                        font-weight: 600;
+                        font-size: .8rem;
+                        color: #00a9d9;
+                        &:not(:last-of-type)::after {
+                            content: ',';
+                            color: black;
+                        }
+                    }
+                    .text-series {
+                        font-weight: 500;
+                        color: #00a9d9;
+                        text-transform: uppercase;
+                    }
                 }
             }
         }

@@ -8,7 +8,7 @@
         <div class="container-narrow">
             <div class="thumb-container">
                 <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
-                <span class="label label-comic-book">Comic Book</span>
+                <span class="label label-type">{{ $comic['type'] }}</span>
                 <span class="label label-view-gallery">View Gallery</span>
             </div>
         </div>
@@ -38,6 +38,65 @@
             <div class="column-right">
                 <h3 class="adv-title">ADVERTISEMENT</h3>
                 <img src="../images/adv.jpg" alt="Advertisement">
+            </div>
+        </div>
+    </section>
+
+    <section class="comic-details">
+        <div class="container-narrow">
+            <div class="column-left">
+                <div class="row">
+                    <h2>Talent</h2>
+                </div>
+                <div class="row">
+                    <div class="column-left">
+                        <h3>Art by:</h3>
+                    </div>
+                    <div class="column-right">
+                        @foreach ($comic['artists'] as $artist)
+                            <span class="list-artists">{{ $artist }}</span>
+                        @endforeach
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column-left">
+                        <h3>Written by:</h3>
+                    </div>
+                    <div class="column-right">
+                        @foreach ($comic['writers'] as $writer)
+                            <span class="list-writers">{{ $writer }}</span>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+            <div class="column-right">
+                <div class="row">
+                    <h2>Specs</h2>
+                </div>
+                <div class="row">
+                    <div class="column-left">
+                        <h3>Series:</h3>
+                    </div>
+                    <div class="column-right">
+                        <span class="text-series">{{ $comic['series'] }}</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column-left">
+                        <h3>U.S. Price:</h3>
+                    </div>
+                    <div class="column-right">
+                        <span><strong>{{ $comic['price'] }}</strong></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column-left">
+                        <h3>On Sale Date:</h3>
+                    </div>
+                    <div class="column-right">
+                        <span><strong>{{ $comic['sale_date'] }}</strong></span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

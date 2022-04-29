@@ -193,7 +193,7 @@ html {
   color: white;
   text-transform: uppercase;
 }
-.thumb-comic .container-narrow .thumb-container .label.label-comic-book {
+.thumb-comic .container-narrow .thumb-container .label.label-type {
   position: absolute;
   top: 0;
   left: 0;
@@ -265,6 +265,52 @@ html {
 }
 .main-content.main-content-comic .container-narrow .column-right .adv-title {
   color: #555555;
+}
+
+.comic-details {
+  background-color: #f6f6f6;
+  color: grey;
+}
+.comic-details .container-narrow {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem 0 5rem 0;
+}
+.comic-details .container-narrow .column-left, .comic-details .container-narrow .column-right {
+  width: 50%;
+}
+.comic-details .container-narrow .column-left .row, .comic-details .container-narrow .column-right .row {
+  display: flex;
+  padding: 1rem 0;
+  border-bottom: 1px solid #b4b6b9;
+}
+.comic-details .container-narrow .column-left .row h2, .comic-details .container-narrow .column-right .row h2 {
+  font-size: 1.4rem;
+  color: #003f70;
+}
+.comic-details .container-narrow .column-left .row .column-left h3, .comic-details .container-narrow .column-left .row .column-right h3, .comic-details .container-narrow .column-right .row .column-left h3, .comic-details .container-narrow .column-right .row .column-right h3 {
+  font-size: 1rem;
+  color: #003f70;
+}
+.comic-details .container-narrow .column-left .row .column-left, .comic-details .container-narrow .column-right .row .column-left {
+  width: 30%;
+}
+.comic-details .container-narrow .column-left .row .column-right, .comic-details .container-narrow .column-right .row .column-right {
+  width: 70%;
+}
+.comic-details .container-narrow .column-left .row .column-right .list-artists, .comic-details .container-narrow .column-left .row .column-right .list-writers, .comic-details .container-narrow .column-right .row .column-right .list-artists, .comic-details .container-narrow .column-right .row .column-right .list-writers {
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: #00a9d9;
+}
+.comic-details .container-narrow .column-left .row .column-right .list-artists:not(:last-of-type)::after, .comic-details .container-narrow .column-left .row .column-right .list-writers:not(:last-of-type)::after, .comic-details .container-narrow .column-right .row .column-right .list-artists:not(:last-of-type)::after, .comic-details .container-narrow .column-right .row .column-right .list-writers:not(:last-of-type)::after {
+  content: ",";
+  color: black;
+}
+.comic-details .container-narrow .column-left .row .column-right .text-series, .comic-details .container-narrow .column-right .row .column-right .text-series {
+  font-weight: 500;
+  color: #00a9d9;
+  text-transform: uppercase;
 }
 
 .content-menu-2 {
