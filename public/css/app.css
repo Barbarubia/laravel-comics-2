@@ -95,6 +95,74 @@ html {
   color: white;
 }
 
+.content-menu {
+  padding: 3rem 0;
+  background-color: #0282f9;
+}
+.content-menu .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+.content-menu .container li {
+  text-transform: uppercase;
+}
+.content-menu .container img {
+  height: 3rem;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+.content-menu .container a {
+  text-decoration: none;
+  color: white;
+}
+
+.content-menu-2 {
+  background-color: #f6f6f6;
+  border-top: 1px solid #b4b6b9;
+}
+.content-menu-2 .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.content-menu-2 .container li {
+  width: calc(25% - 3rem);
+  text-transform: uppercase;
+  border-left: 1px solid #b4b6b9;
+}
+.content-menu-2 .container li:last-of-type {
+  border-right: 1px solid #b4b6b9;
+}
+.content-menu-2 .container a {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem;
+  text-decoration: none;
+  color: grey;
+}
+.content-menu-2 .container a .icon {
+  display: inline-block;
+  width: 37px;
+  height: 37px;
+  background-image: url(../images/cta-icons.png);
+}
+.content-menu-2 .container a .icon.icon-digital-comics {
+  background-position: 0 0;
+}
+.content-menu-2 .container a .icon.icon-shop-dc {
+  background-position: 37px 0;
+}
+.content-menu-2 .container a .icon.icon-comic-shop-locator {
+  background-position: 74px 0;
+}
+.content-menu-2 .container a .icon.icon-subscription {
+  background-position: 111px 0;
+}
+
 .comics-container {
   position: relative;
   margin-bottom: 3rem;

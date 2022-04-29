@@ -21,4 +21,6 @@
             <button>Load More</button>
         </div>
     </section>
+
+    @include('partials.menucontent')
 @endsection

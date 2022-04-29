@@ -8,4 +8,6 @@
             <h1>{{ $comic['title'] }}</h1>
         </div>
     </section>
+
+    @include('partials.menucontent2')
 @endsection

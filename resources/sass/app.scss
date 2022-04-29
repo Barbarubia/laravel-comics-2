@@ -89,6 +89,74 @@
     }
 }
 
+.content-menu {
+    padding: 3rem 0;
+    background-color: $background-blue;
+    .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        li {
+            text-transform: uppercase;
+        }
+        img {
+            height: 3rem;
+            vertical-align: middle;
+            margin-right: .5rem;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+
+.content-menu-2 {
+    background-color: #f6f6f6;
+    border-top: 1px solid #b4b6b9;
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        li {
+            width: calc(100% / 4 - 3rem);
+            text-transform: uppercase;
+            border-left: 1px solid #b4b6b9;
+            &:last-of-type {
+                border-right: 1px solid #b4b6b9;
+            }
+        }
+        a {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 1rem;
+            text-decoration: none;
+            color: grey;
+            .icon {
+                display: inline-block;
+                width: 37px;
+                height: 37px;
+                background-image: url(../images/cta-icons.png);
+                &.icon-digital-comics {
+                background-position: 0 0;
+                }
+                &.icon-shop-dc {
+                background-position: 37px 0;
+                }
+                &.icon-comic-shop-locator {
+                background-position: 74px 0;
+                }
+                &.icon-subscription {
+                background-position: 111px 0;
+                }
+            }
+        }
+    }
+}
+
 // CARDS-CONTAINER
 .comics-container {
     position: relative;
