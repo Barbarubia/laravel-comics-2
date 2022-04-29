@@ -92,10 +92,8 @@ html {
   height: 35rem;
 }
 
-.main-content {
-  padding: 3rem 0;
-}
 .main-content.main-content-comics {
+  padding: 3rem 0 1rem 0;
   background-color: #1c1c1c;
   color: white;
 }
@@ -207,6 +205,58 @@ html {
   left: 0;
   width: 100%;
   text-align: center;
+}
+
+.main-content.main-content-comic {
+  padding: 3rem 0;
+}
+.main-content.main-content-comic .container-narrow {
+  display: flex;
+}
+.main-content.main-content-comic .container-narrow .column-left {
+  width: 70%;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.main-content.main-content-comic .container-narrow .column-left .comic-title {
+  font-size: 1.8rem;
+  color: #003f5e;
+  text-transform: uppercase;
+}
+.main-content.main-content-comic .container-narrow .column-left .box-price-and-availability {
+  background-color: #55ba59;
+  display: flex;
+  flex-direction: row;
+  height: 3rem;
+  font-weight: 600;
+  color: white;
+}
+.main-content.main-content-comic .container-narrow .column-left .box-price-and-availability .price-and-availability {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  padding: 0 2rem;
+}
+.main-content.main-content-comic .container-narrow .column-left .box-price-and-availability .price-and-availability .text-opaque {
+  opacity: 0.7;
+}
+.main-content.main-content-comic .container-narrow .column-left .box-price-and-availability button {
+  width: 30%;
+  background-color: #55ba59;
+  font-weight: 600;
+  color: white;
+  border: none;
+  border-left: 1px solid #39803d;
+  cursor: pointer;
+}
+.main-content.main-content-comic .container-narrow .column-left .comic-description {
+  font-weight: 500;
+}
+.main-content.main-content-comic .container-narrow .column-right {
+  width: 30%;
 }
 
 .content-menu-2 {

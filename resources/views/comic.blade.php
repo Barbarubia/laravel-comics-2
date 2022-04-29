@@ -14,9 +14,30 @@
         </div>
     </section>
 
-    <section class="main-content">
+    <section class="main-content main-content-comic">
         <div class="container-narrow">
-            <h1>{{ $comic['title'] }}</h1>
+            <div class="column-left">
+
+                <h1 class="comic-title">{{ $comic['title'] }}</h1>
+
+                <div class="box-price-and-availability">
+                    <div class="price-and-availability">
+                        <div>
+                            <span class="text-opaque">U.S. Price: </span>
+                            <span>{{ $comic['price'] }}</span>
+                        </div>
+                        <span class="text-opaque">AVAILABLE</span>
+
+                    </div>
+                    <button>Check Availability <i class="fa-solid fa-caret-down"></i></button>
+                </div>
+
+                <p class="comic-description">{{ $comic['description'] }}</p>
+
+            </div>
+            <div class="column-right">
+
+            </div>
         </div>
     </section>
 
