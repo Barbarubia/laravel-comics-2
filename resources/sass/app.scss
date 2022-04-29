@@ -80,10 +80,13 @@
 }
 
 // MAIN
-main {
+
+.main-content {
     padding: 3rem 0;
-    background-color: #1c1c1c;
-    color: white;
+    &.main-content-comics {
+        background-color: #1c1c1c;
+        color: white;
+    }
 }
 
 // CARDS-CONTAINER

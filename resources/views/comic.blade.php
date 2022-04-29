@@ -3,5 +3,9 @@
 @section('title', 'Comic')
 
 @section('content')
-    <h1>{{ $comic['title'] }}</h1>
+    <section class="main-content">
+        <div class="container">
+            <h1>{{ $comic['title'] }}</h1>
+        </div>
+    </section>
 @endsection

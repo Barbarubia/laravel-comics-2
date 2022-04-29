@@ -87,8 +87,10 @@ html {
   height: 35rem;
 }
 
-main {
+.main-content {
   padding: 3rem 0;
+}
+.main-content.main-content-comics {
   background-color: #1c1c1c;
   color: white;
 }
