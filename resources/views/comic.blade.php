@@ -4,7 +4,7 @@
 
 @section('content')
     <section class="main-content">
-        <div class="container">
+        <div class="container-narrow">
             <h1>{{ $comic['title'] }}</h1>
         </div>
     </section>

@@ -115,13 +115,13 @@
 .content-menu-2 {
     background-color: #f6f6f6;
     border-top: 1px solid #b4b6b9;
-    .container {
+    .container-narrow {
         display: flex;
         justify-content: center;
         align-items: center;
         list-style: none;
         li {
-            width: calc(100% / 4 - 3rem);
+            width: calc(100% / 4);
             text-transform: uppercase;
             border-left: 1px solid #b4b6b9;
             &:last-of-type {

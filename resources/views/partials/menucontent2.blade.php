@@ -1,5 +1,5 @@
 <section class="content-menu-2">
-    <ul class="container">
+    <ul class="container-narrow">
         @php
             $contentmenu = config('contentmenu')
         @endphp
