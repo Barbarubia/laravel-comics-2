@@ -4,7 +4,7 @@
 
 // HEADER
 .header-top {
-    background-color: $background-blue;
+    background-color: $blue-dc-comics;
     ul {
         display: flex;
         justify-content: flex-end;
@@ -53,16 +53,16 @@
                         color: #555758;
                     }
                     &.active {
-                        border-bottom: 5px solid $background-blue;
+                        border-bottom: 5px solid $blue-dc-comics;
                         a {
-                            color: $background-blue;
+                            color: $blue-dc-comics;
                         }
                     }
                 }
             }
         }
         .search {
-            border-bottom: 2px solid $background-blue;
+            border-bottom: 2px solid $blue-dc-comics;
             input {
                 border: none;
                 text-align: right;
@@ -79,7 +79,7 @@
     height: 35rem;
 }
 
-// MAIN
+// ROUTE COMICS
 
 .main-content {
     padding: 3rem 0;
@@ -91,7 +91,7 @@
 
 .content-menu {
     padding: 3rem 0;
-    background-color: $background-blue;
+    background-color: $blue-dc-comics;
     .container {
         display: flex;
         justify-content: space-around;
@@ -112,51 +112,6 @@
     }
 }
 
-.content-menu-2 {
-    background-color: #f6f6f6;
-    border-top: 1px solid #b4b6b9;
-    .container-narrow {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        list-style: none;
-        li {
-            width: calc(100% / 4);
-            text-transform: uppercase;
-            border-left: 1px solid #b4b6b9;
-            &:last-of-type {
-                border-right: 1px solid #b4b6b9;
-            }
-        }
-        a {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            padding: 1rem;
-            text-decoration: none;
-            color: grey;
-            .icon {
-                display: inline-block;
-                width: 37px;
-                height: 37px;
-                background-image: url(../images/cta-icons.png);
-                &.icon-digital-comics {
-                background-position: 0 0;
-                }
-                &.icon-shop-dc {
-                background-position: 37px 0;
-                }
-                &.icon-comic-shop-locator {
-                background-position: 74px 0;
-                }
-                &.icon-subscription {
-                background-position: 111px 0;
-                }
-            }
-        }
-    }
-}
-
 // CARDS-CONTAINER
 .comics-container {
     position: relative;
@@ -168,7 +123,7 @@
         position: absolute;
         top: -5rem;
         align-self: flex-start;
-        background-color: $background-blue;
+        background-color: $blue-dc-comics;
         font-weight: 800;
         text-transform: uppercase;
         padding: .5rem 3rem;
@@ -202,12 +157,107 @@
     }
     button {
         border: none;
-        background-color: $background-blue;
+        background-color: $blue-dc-comics;
         padding: .5rem 3rem;
         font-weight: 600;
         color: white;
         text-transform: uppercase;
         cursor: pointer;
+    }
+}
+
+// ROUTE COMIC/{id}
+.thumb-comic {
+    height: 5rem;
+    background-color: $blue-dc-comics;
+    .container-narrow {
+        position: relative;
+        .thumb-container {
+            position: absolute;
+            bottom: -4rem;
+            border: 1px solid white;
+            .label {
+                background-color: #00a9d9;
+                color: white;
+                text-transform: uppercase;
+                &.label-comic-book {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    padding: 0 .5rem;
+                }
+                &.label-view-gallery {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+.content-menu-2 {
+    background-color: #f6f6f6;
+    border-top: 1px solid #b4b6b9;
+    .container-narrow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        li {
+            width: calc(100% / 4);
+            text-transform: uppercase;
+            border-left: 1px solid #b4b6b9;
+            &:last-of-type {
+                border-right: 1px solid #b4b6b9;
+            }
+        }
+        a {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 1rem;
+            text-decoration: none;
+            font-weight: 600;
+            color: grey;
+            .icon {
+                display: inline-block;
+                width: 37px;
+                height: 37px;
+                background-image: url(../images/cta-icons.png);
+                &.icon-digital-comics {
+                background-position: 0 0;
+                }
+                &.icon-shop-dc {
+                background-position: 37px 0;
+                }
+                &.icon-comic-shop-locator {
+                background-position: 74px 0;
+                }
+                &.icon-subscription {
+                background-position: 111px 0;
+                }
+            }
+            &:hover {
+                color: $blue-dc-comics;
+                .icon {
+                    &.icon-digital-comics {
+                        background-position: 0 37px;
+                        }
+                        &.icon-shop-dc {
+                        background-position: 37px 37px;
+                        }
+                        &.icon-comic-shop-locator {
+                        background-position: 74px 37px;
+                        }
+                        &.icon-subscription {
+                        background-position: 111px 37px;
+                        }
+                }
+            }
+        }
     }
 }
 
@@ -254,7 +304,7 @@ footer {
         align-items: center;
         button {
             background: none;
-            border: 1px solid $background-blue;
+            border: 1px solid $blue-dc-comics;
             padding: .8rem;
             text-transform: uppercase;
             color: white;
@@ -268,7 +318,7 @@ footer {
           gap: 1rem;
           h3 {
             text-transform: uppercase;
-            color: $background-blue;
+            color: $blue-dc-comics;
           }
         }
     }

@@ -123,51 +123,6 @@ html {
   color: white;
 }
 
-.content-menu-2 {
-  background-color: #f6f6f6;
-  border-top: 1px solid #b4b6b9;
-}
-.content-menu-2 .container-narrow {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-}
-.content-menu-2 .container-narrow li {
-  width: 25%;
-  text-transform: uppercase;
-  border-left: 1px solid #b4b6b9;
-}
-.content-menu-2 .container-narrow li:last-of-type {
-  border-right: 1px solid #b4b6b9;
-}
-.content-menu-2 .container-narrow a {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 1rem;
-  text-decoration: none;
-  color: grey;
-}
-.content-menu-2 .container-narrow a .icon {
-  display: inline-block;
-  width: 37px;
-  height: 37px;
-  background-image: url(../images/cta-icons.png);
-}
-.content-menu-2 .container-narrow a .icon.icon-digital-comics {
-  background-position: 0 0;
-}
-.content-menu-2 .container-narrow a .icon.icon-shop-dc {
-  background-position: 37px 0;
-}
-.content-menu-2 .container-narrow a .icon.icon-comic-shop-locator {
-  background-position: 74px 0;
-}
-.content-menu-2 .container-narrow a .icon.icon-subscription {
-  background-position: 111px 0;
-}
-
 .comics-container {
   position: relative;
   margin-bottom: 3rem;
@@ -221,6 +176,98 @@ html {
   color: white;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.thumb-comic {
+  height: 5rem;
+  background-color: #0282f9;
+}
+.thumb-comic .container-narrow {
+  position: relative;
+}
+.thumb-comic .container-narrow .thumb-container {
+  position: absolute;
+  bottom: -4rem;
+  border: 1px solid white;
+}
+.thumb-comic .container-narrow .thumb-container .label {
+  background-color: #00a9d9;
+  color: white;
+  text-transform: uppercase;
+}
+.thumb-comic .container-narrow .thumb-container .label.label-comic-book {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 0.5rem;
+}
+.thumb-comic .container-narrow .thumb-container .label.label-view-gallery {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.content-menu-2 {
+  background-color: #f6f6f6;
+  border-top: 1px solid #b4b6b9;
+}
+.content-menu-2 .container-narrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.content-menu-2 .container-narrow li {
+  width: 25%;
+  text-transform: uppercase;
+  border-left: 1px solid #b4b6b9;
+}
+.content-menu-2 .container-narrow li:last-of-type {
+  border-right: 1px solid #b4b6b9;
+}
+.content-menu-2 .container-narrow a {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: grey;
+}
+.content-menu-2 .container-narrow a .icon {
+  display: inline-block;
+  width: 37px;
+  height: 37px;
+  background-image: url(../images/cta-icons.png);
+}
+.content-menu-2 .container-narrow a .icon.icon-digital-comics {
+  background-position: 0 0;
+}
+.content-menu-2 .container-narrow a .icon.icon-shop-dc {
+  background-position: 37px 0;
+}
+.content-menu-2 .container-narrow a .icon.icon-comic-shop-locator {
+  background-position: 74px 0;
+}
+.content-menu-2 .container-narrow a .icon.icon-subscription {
+  background-position: 111px 0;
+}
+.content-menu-2 .container-narrow a:hover {
+  color: #0282f9;
+}
+.content-menu-2 .container-narrow a:hover .icon.icon-digital-comics {
+  background-position: 0 37px;
+}
+.content-menu-2 .container-narrow a:hover .icon.icon-shop-dc {
+  background-position: 37px 37px;
+}
+.content-menu-2 .container-narrow a:hover .icon.icon-comic-shop-locator {
+  background-position: 74px 37px;
+}
+.content-menu-2 .container-narrow a:hover .icon.icon-subscription {
+  background-position: 111px 37px;
 }
 
 footer {
