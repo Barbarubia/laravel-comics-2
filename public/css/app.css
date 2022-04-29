@@ -254,9 +254,17 @@ html {
 }
 .main-content.main-content-comic .container-narrow .column-left .comic-description {
   font-weight: 500;
+  color: #555555;
+  line-height: 1.5;
 }
 .main-content.main-content-comic .container-narrow .column-right {
   width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.main-content.main-content-comic .container-narrow .column-right .adv-title {
+  color: #555555;
 }
 
 .content-menu-2 {

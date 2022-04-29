@@ -243,10 +243,18 @@
                 }
                 .comic-description {
                     font-weight: 500;
+                    color: #555555;
+                    line-height: 1.5;
                 }
             }
             .column-right {
                 width: 30%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                .adv-title {
+                    color: #555555;
+                }
             }
         }
     }

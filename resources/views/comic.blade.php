@@ -36,7 +36,8 @@
 
             </div>
             <div class="column-right">
-
+                <h3 class="adv-title">ADVERTISEMENT</h3>
+                <img src="../images/adv.jpg" alt="Advertisement">
             </div>
         </div>
     </section>
